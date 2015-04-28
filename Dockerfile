@@ -10,8 +10,4 @@ ADD files/builder-wrapper /builder-wrapper
 ONBUILD ADD . /app
 ONBUILD RUN /builder-wrapper
 
-# Set and expose default port
-ENV PORT 3000
-EXPOSE 3000
-
 ENTRYPOINT ["/exec-wrapper"]
